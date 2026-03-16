@@ -17,78 +17,134 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="bg-orb orb-1"></div>
-    <div class="bg-orb orb-2"></div>
+    <div class="mesh"></div>
+    <div class="spot spot-a"></div>
+    <div class="spot spot-b"></div>
 
     <header class="topbar container">
       <a class="brand" href="#home">Marat Safiyev</a>
       <nav class="menu">
+        <a href="#story">История</a>
         <a href="#projects">Проекты</a>
         <a href="#socials">Соцсети</a>
-        <a href="#contact">Контакты</a>
       </nav>
-      <button id="themeToggle" class="theme-btn" type="button" aria-label="Сменить тему">
-        🌙
-      </button>
+      <button id="themeToggle" class="theme-btn" type="button" aria-label="Сменить тему">🌙</button>
     </header>
 
     <main id="home" class="container">
-      <section class="hero">
-        <div class="hero-text reveal">
-          <p class="kicker">Founder • Builder • Community Leader</p>
-          <h1>
-            Привет, я <span>Марат Сафиев</span><br />
-            строю AI и web3 проекты
-          </h1>
-          <p class="lead">
-            Мне 16 лет. По нации лезгин. Общаюсь на русском, английском, турецком/азербайджанском и лезгинском.
-            Открыт к новым коллаборациям и идеям.
-          </p>
-          <div class="cta-row">
-            <a class="btn btn-primary" href="https://t.me/SafiyevMarat" target="_blank" rel="noreferrer"
-              >Написать в Telegram</a
-            >
-            <a class="btn btn-ghost" href="https://x.com/SafiyevMarat" target="_blank" rel="noreferrer">Профиль в X</a>
-          </div>
+      <section class="hero section">
+        <p class="kicker reveal">Yo, я Марат</p>
+        <h1 class="hero-title reveal">
+          <span>SAFIYEV</span>
+          <br />
+          Founder of AI + web3 ideas
+        </h1>
+        <p class="lead reveal">
+          Мне 16 лет, я лезгин. Строю проекты на стыке AI, сообществ и продуктового мышления.
+          Говорю на русском, английском, турецком/азербайджанском и лезгинском.
+        </p>
+        <div class="cta-row reveal">
+          <a class="btn btn-primary" href="https://t.me/SafiyevMarat" target="_blank" rel="noreferrer">Connect in Telegram</a>
+          <a class="btn btn-ghost" href="https://x.com/SafiyevMarat" target="_blank" rel="noreferrer">Connect in X</a>
         </div>
-        <div class="hero-media reveal">
-          <div class="collage">
-            <img src="./profile-main.png" alt="Marat Safiyev portrait in hall" class="main-photo" />
-            <img src="./profile-second.png" alt="Marat Safiyev outdoor portrait" class="accent-photo" />
-          </div>
+      </section>
+
+      <section class="photo-showcase section reveal">
+        <div class="photo-main tilt-card">
+          <img src="./profile-main.png" alt="Marat Safiyev portrait in hall" />
+        </div>
+        <div class="photo-side tilt-card">
+          <img src="./profile-second.png" alt="Marat Safiyev outdoor portrait" />
+        </div>
+      </section>
+
+      <section class="phrase-strip">
+        <div class="strip-track">
+          <span>founder</span>
+          <span>builder</span>
+          <span>hustle</span>
+          <span>ai</span>
+          <span>web3</span>
+          <span>discipline</span>
+          <span>vision</span>
+          <span>founder</span>
+          <span>builder</span>
+          <span>hustle</span>
+        </div>
+      </section>
+
+      <section id="story" class="section">
+        <h2 class="reveal">Кто я и куда иду</h2>
+        <div class="story-grid">
+          <article class="panel reveal">
+            <h3>Старт</h3>
+            <p>
+              Я рано начал путь в технологиях и сейчас фокусируюсь на создании полезных AI-продуктов и web3-комьюнити.
+            </p>
+          </article>
+          <article class="panel reveal">
+            <h3>Сейчас</h3>
+            <p>
+              Руководитель/фаундер нескольких проектов. Развиваю личный бренд и продуктовый подход через открытые кейсы.
+            </p>
+          </article>
+          <article class="panel reveal">
+            <h3>Цель</h3>
+            <p>
+              Масштабировать международные продукты и сильные комьюнити вокруг AI, где технология реально решает проблемы людей.
+            </p>
+          </article>
         </div>
       </section>
 
       <section id="projects" class="section">
-        <h2 class="reveal">Мои проекты и роль</h2>
+        <h2 class="reveal">Проекты</h2>
         <div class="cards">
-          <article class="card reveal">
+          <article class="card reveal tilt-card">
             <h3>AI Lumiere</h3>
             <p class="role">Founder, leader, owner 100%</p>
-            <p>
-              Hackathon team + отдельное направление, где запускаем собственные продукты.
-            </p>
-            <a href="https://t.me/AILumiere_news" target="_blank" rel="noreferrer">Telegram канала</a>
+            <p>Hackathon team и отдельное направление запуска собственных продуктов.</p>
+            <a href="https://t.me/AILumiere_news" target="_blank" rel="noreferrer">Telegram</a>
           </article>
-
-          <article class="card reveal">
+          <article class="card reveal tilt-card">
             <h3>SuperWizard</h3>
             <p class="role">Founder, owner 100%</p>
-            <p>AI-агент для твоего браузера.</p>
+            <p>AI-агент для браузера: автоматизирует рутину и усиливает продуктивность.</p>
             <a href="https://superwizard.org" target="_blank" rel="noreferrer">superwizard.org</a>
           </article>
-
-          <article class="card reveal">
+          <article class="card reveal tilt-card">
             <h3>web3frensCA</h3>
             <p class="role">Leader</p>
-            <p>Комьюнити/инициатива в web3 направлении.</p>
-            <a href="https://t.me/web3frensCA" target="_blank" rel="noreferrer">Telegram проекта</a>
+            <p>Комьюнити и инициатива вокруг web3-идей, роста и совместных запусков.</p>
+            <a href="https://t.me/web3frensCA" target="_blank" rel="noreferrer">Telegram</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="reveal">Numbers</h2>
+        <div class="stats-grid">
+          <article class="stat reveal">
+            <p class="num">3</p>
+            <p class="txt">активных проекта</p>
+          </article>
+          <article class="stat reveal">
+            <p class="num">16</p>
+            <p class="txt">лет, но уже founder</p>
+          </article>
+          <article class="stat reveal">
+            <p class="num">5</p>
+            <p class="txt">языков общения</p>
+          </article>
+          <article class="stat reveal">
+            <p class="num">24/7</p>
+            <p class="txt">режим build & learn</p>
           </article>
         </div>
       </section>
 
       <section id="socials" class="section">
-        <h2 class="reveal">Социальные сети</h2>
+        <h2 class="reveal">Links to me</h2>
         <div class="social-grid">
           <a class="social reveal" href="https://x.com/SafiyevMarat" target="_blank" rel="noreferrer">X (Twitter)</a>
           <a class="social reveal" href="https://www.youtube.com/@SafiyevMarat" target="_blank" rel="noreferrer">YouTube</a>
@@ -98,18 +154,19 @@
         </div>
       </section>
 
-      <section id="contact" class="section contact reveal">
-        <h2>Связаться со мной</h2>
+      <section class="section contact reveal">
+        <h2>BUILD. LEAD. SHIP.</h2>
         <p>
-          Пиши в <a href="https://t.me/SafiyevMarat" target="_blank" rel="noreferrer">Telegram @SafiyevMarat</a>
-          или в
-          <a href="https://x.com/SafiyevMarat" target="_blank" rel="noreferrer">X</a>.
+          Напиши мне:
+          <a href="https://t.me/SafiyevMarat" target="_blank" rel="noreferrer">@SafiyevMarat</a>
+          или
+          <a href="https://x.com/SafiyevMarat" target="_blank" rel="noreferrer">в X</a>.
         </p>
       </section>
     </main>
 
     <footer class="container footer">
-      <p>© <span id="year"></span> Marat Safiyev. Built with focus and discipline.</p>
+      <p>© <span id="year"></span> Marat Safiyev</p>
     </footer>
 
     <script src="./script.js"></script>
