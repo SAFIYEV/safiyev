@@ -482,12 +482,35 @@ h2 {
 }
 
 @media (max-width: 680px) {
+  .container {
+    width: min(1160px, 94vw);
+  }
+
+  .topbar {
+    top: 8px;
+    margin-top: 8px;
+    padding: 9px 12px;
+  }
+
   .menu {
     display: none;
   }
 
+  .section {
+    padding: 28px 0;
+  }
+
+  .hero {
+    gap: 14px;
+  }
+
   .hero-title span {
     font-size: clamp(2.1rem, 13vw, 4.2rem);
+  }
+
+  .hero-visual {
+    height: 430px;
+    min-height: 390px;
   }
 
   .holo-card {
@@ -501,5 +524,52 @@ h2 {
 
   .social-grid {
     justify-content: center;
+  }
+}
+
+/* Phone portrait: tighter vertical rhythm */
+@media (max-width: 680px) and (orientation: portrait) {
+  .kicker {
+    font-size: 0.7rem;
+  }
+
+  .lead {
+    font-size: 0.95rem;
+  }
+
+  .ticker-track {
+    gap: 22px;
+    padding: 11px 0;
+  }
+}
+
+/* Phone landscape: keep content readable without huge blocks */
+@media (max-width: 980px) and (orientation: landscape) {
+  .topbar {
+    position: static;
+  }
+
+  .hero {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 16px;
+    padding-top: 14px;
+  }
+
+  .hero-visual {
+    height: 340px;
+    min-height: 300px;
+  }
+
+  .holo-mini {
+    height: 46%;
+  }
+
+  .section {
+    padding: 24px 0;
+  }
+
+  .ticker-track {
+    animation-duration: 14s;
   }
 }
