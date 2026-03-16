@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marat Safiyev | Personal Landing</title>
+    <meta
+      name="description"
+      content="Личный лендинг Marat Safiyev: проекты, социальные сети, контакты."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+
+    <header class="topbar container">
+      <a class="brand" href="#home">Marat Safiyev</a>
+      <nav class="menu">
+        <a href="#projects">Проекты</a>
+        <a href="#socials">Соцсети</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+      <button id="themeToggle" class="theme-btn" type="button" aria-label="Сменить тему">
+        🌙
+      </button>
+    </header>
+
+    <main id="home" class="container">
+      <section class="hero">
+        <div class="hero-text reveal">
+          <p class="kicker">Founder • Builder • Community Leader</p>
+          <h1>
+            Привет, я <span>Марат Сафиев</span><br />
+            строю AI и web3 проекты
+          </h1>
+          <p class="lead">
+            Мне 16 лет. По нации лезгин. Общаюсь на русском, английском, турецком/азербайджанском и лезгинском.
+            Открыт к новым коллаборациям и идеям.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="https://t.me/SafiyevMarat" target="_blank" rel="noreferrer"
+              >Написать в Telegram</a
+            >
+            <a class="btn btn-ghost" href="https://x.com/SafiyevMarat" target="_blank" rel="noreferrer">Профиль в X</a>
+          </div>
+        </div>
+        <div class="hero-media reveal">
+          <div class="collage">
+            <img src="./profile-main.png" alt="Marat Safiyev portrait in hall" class="main-photo" />
+            <img src="./profile-second.png" alt="Marat Safiyev outdoor portrait" class="accent-photo" />
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <h2 class="reveal">Мои проекты и роль</h2>
+        <div class="cards">
+          <article class="card reveal">
+            <h3>AI Lumiere</h3>
+            <p class="role">Founder, leader, owner 100%</p>
+            <p>
+              Hackathon team + отдельное направление, где запускаем собственные продукты.
+            </p>
+            <a href="https://t.me/AILumiere_news" target="_blank" rel="noreferrer">Telegram канала</a>
+          </article>
+
+          <article class="card reveal">
+            <h3>SuperWizard</h3>
+            <p class="role">Founder, owner 100%</p>
+            <p>AI-агент для твоего браузера.</p>
+            <a href="https://superwizard.org" target="_blank" rel="noreferrer">superwizard.org</a>
+          </article>
+
+          <article class="card reveal">
+            <h3>web3frensCA</h3>
+            <p class="role">Leader</p>
+            <p>Комьюнити/инициатива в web3 направлении.</p>
+            <a href="https://t.me/web3frensCA" target="_blank" rel="noreferrer">Telegram проекта</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="socials" class="section">
+        <h2 class="reveal">Социальные сети</h2>
+        <div class="social-grid">
+          <a class="social reveal" href="https://x.com/SafiyevMarat" target="_blank" rel="noreferrer">X (Twitter)</a>
+          <a class="social reveal" href="https://www.youtube.com/@SafiyevMarat" target="_blank" rel="noreferrer">YouTube</a>
+          <a class="social reveal" href="https://teletype.in/@minudefi" target="_blank" rel="noreferrer">Teletype</a>
+          <a class="social reveal" href="https://www.instagram.com/maratsafiyev19/" target="_blank" rel="noreferrer">Instagram</a>
+          <a class="social reveal" href="https://t.me/minudefi" target="_blank" rel="noreferrer">Telegram channel</a>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact reveal">
+        <h2>Связаться со мной</h2>
+        <p>
+          Пиши в <a href="https://t.me/SafiyevMarat" target="_blank" rel="noreferrer">Telegram @SafiyevMarat</a>
+          или в
+          <a href="https://x.com/SafiyevMarat" target="_blank" rel="noreferrer">X</a>.
+        </p>
+      </section>
+    </main>
+
+    <footer class="container footer">
+      <p>© <span id="year"></span> Marat Safiyev. Built with focus and discipline.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
